@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFI-Machine</title>
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<style>
+    h1{
+        font-family:cursive; 
+        font-size: 50px; 
+        text-align: center;
+        color:blueviolet;
+    }
+    h2{
+        font-family: cursive; 
+        font-size: 24px; 
+    }
+    body{
+        background-image:url(Fondo1.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+        table{
+            border:2px solid black;
+        }th{
+            border: 1px solid black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+        }td{
+            border: 1px solid slateblue;
+            font-family: cursive;
+            font-size: 20px;
+            font-weight: bold;
+        }p{
+            text-align: justify;
+        }
+        
+        .Spider {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .Spider .Spider-content {
+            background-color:white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid blue;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="alternate"><h1>EFI-Machine</h1></marquee>
+
+    <button onclick="openSpider('Misión')">Misión</button>
+    <button onclick="openSpider('Visión')">Visión</button>
+    <button onclick="openSpider('Objetivos')">Objetivos</button>
+
+    <div id="Misión" class="Spider">
+        <div class="Spider-content">
+            <span class="close">&times;</span>
+            <h3>Misión</h3>
+            <p>En Spider-Bots, nuestra misión es transformar la percepción de la robótica al diseñar y fabricar hexápodos innovadores que fusionan la funcionalidad con la estética.</p>
+        </div>
+    </div>
+
+    <div id="Visión" class="Spider">
+        <div class="Spider-content">
+            <span class="close">&times;</span>
+            <h3>Visión</h3>
+            <p>Crear una línea de Spider-Bots innovadores y atractivos que cautiven a los entusiastas de la robótica y se conviertan en piezas de exhibición destacadas en ferias, eventos y hogares. Estos Spider-Bots no solo serán visualmente impactantes, sino también funcionales y de alta calidad, brindando una experiencia única a los usuarios y estableciendo nuestra marca como líder en el mundo de los hexápodos.</p>
+        </div>
+    </div>
+
+    <div id="Objetivos" class="Spider">
+        <div class="Spider-content">
+            <span class="close">&times;</span>
+            <h3>Objetivos</h3>
+            <ol type="1">
+                <li>Desarrollo Tecnológico: Investiga y desarrolla nuevas funcionalidades para tus hexápodos. Esto podría incluir mejoras en la movilidad, la capacidad de interactuar con objetos o incluso la integración de sensores para recopilar datos.</li>
+                <li>Diseño y Estética: Asegúrate de que tus Spider-Bots sean visualmente atractivos y se destaquen como piezas de exhibición. El diseño debe ser elegante y moderno, y las patas deben ser funcionales y estéticamente agradables.</li>
+                <li>Mercadotecnia y Promoción: Crea una estrategia de marketing sólida para dar a conocer tus Spider-Bots. Esto podría incluir la creación de un sitio web, presencia en redes sociales, participación en ferias y eventos, y colaboraciones con influencers o medios especializados.</li>
+                <li>Ventas y Distribución: Define cómo planeas vender tus productos. ¿Serán vendidos directamente al consumidor o a través de tiendas minoristas? ¿Explorarás el mercado internacional? Establece metas de ventas y busca oportunidades de distribución.</li>
+                <li>Investigación de Mercado: Realiza estudios de mercado para comprender las necesidades y preferencias de tus clientes potenciales. ¿Quiénes son tus principales clientes objetivo? ¿Qué características valoran más en un hexápodo de exhibición?</li>
+                <li>Calidad y Servicio al Cliente: Asegúrate de que tus Spider-Bots cumplan con altos estándares de calidad. Ofrece un excelente servicio al cliente y garantías para construir una base de clientes leales.</li>
+                <li>Innovación Continua: Mantén un enfoque en la innovación. ¿Cómo puedes seguir mejorando tus productos? ¿Hay oportunidades para expandir la línea de productos o crear versiones más avanzadas?</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function openSpider(SpiderId) {
+            const Spider = document.getElementById(SpiderId);
+            Spider.style.display = 'block';
+        }
+
+        document.addEventListener('click', (event) => {
+            if (event.target.className === 'close') {
+                const Spider = event.target.closest('.Spider');
+                Spider.style.display = 'none';
+            }
+        });
+    </script>
+
+    
+    <h2>¡Bienvenidos a EFI-Machine...</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">ENLACES A PÁGINAS WEB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form>
+                <tr>
+                    <td><label>Youtube</label></td>
+                    <td> <a href="https://youtube.com/@EFI-Machine?si=dEymqWPPVnj4rEzk" target="_blank"><img src="../Macro/Youtube.jpg" width="150px"></a></td>
+                    <td>TikTok</td>
+                    <td><a href="https://www.tiktok.com/@maquina.de.recicl?_t=8lOhXB86jAs&_r=1" target="_blank"><img src="../Macro/Tik Tok.jpg" width="150px"></a></td>
+                </tr>
+                <tr>
+                   
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td><a href="https://www.instagram.com/filamento_maquina_?igsh=MWdtNGV1cXl5azNxcQ%3D%3D&utm_source=qr" target="_blank"><img src="../Macro/Instagram.jpg" width="150px"></a> </td>
+                    <td>Facebook</td>
+                    <td> <a href="https://www.facebook.com/profile.php?id=61558073542408&mibextid=ZbWKwL" target="_blank"><img src="../Macro/Facebook.jpg" width="150px"></a></td>
+                </tr>
+                </tr>    
+                <tr>
+                    
+    
+               
+            </form>
+        </tbody>
+    </table>
+     
+    
+</fieldset>
+</body>
+</html>
